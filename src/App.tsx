@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Atoms/Header"
+import TickerList from "./components/Pages/Ticker/TickerList/TickerList"
+import TickerDetail from "./components/Pages/Ticker/TickerDetail/TickerDetail"
+
+
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-beige">
+      <Header/>
+      <Routes>
+        <Route path="/" element={<TickerList />} />
+        <Route path="/detail/:tickerId" element={<TickerDetail />} />
+      </Routes>
     </div>
   );
 }
