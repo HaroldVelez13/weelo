@@ -1,8 +1,21 @@
-# Getting Started with Create React App
+# Weelo Test 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Available Scripts docker
 
-## Available Scripts
+In the project directory, you can run:
+### `docker-compose up --build`
+
+This script run: 
+
+### `npm install`
+
+### `npm test`
+
+### `npm start`
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Available Scripts npm
 
 In the project directory, you can run:
 
