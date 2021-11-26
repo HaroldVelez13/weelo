@@ -52,7 +52,7 @@ function TickerTable({ columns, data, handleClick }: Props): JSX.Element {
                             <tr className="table-secondary pointer" {...row.getRowProps()} onClick={() => handleClick(row.original.id)}>
                                 {row.cells.map((cell: any) => {
                                     return (
-                                        <td scope="row" {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                                        <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                                     )
                                 })}
                             </tr>

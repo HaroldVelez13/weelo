@@ -1,4 +1,3 @@
-import logo from "../../logo.png"
 
 function Loading(): JSX.Element {
     return (
